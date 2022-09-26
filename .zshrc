@@ -1,10 +1,5 @@
-# prompt with vsc info
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-zstyle ':vcs_info:git:*' formats " %b "
-PROMPT='%F{cyan}%3~%f %F{red}${vcs_info_msg_0_}%f%F{green}>%f '
+# custom prompt
+PROMPT='%F{cyan}%3~%f %F{green}>%f '
 
 # ignore case for completion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
@@ -24,3 +19,6 @@ alias rz='source ~/.zshrc && echo ".zshrc is reloaded"'
 # quick access to some commonly used directories
 alias df='cd ~/Developer/dotfiles'
 alias dev='cd ~/Developer/'
+
+# homebrew config
+export PATH="/usr/local/sbin:$PATH"
