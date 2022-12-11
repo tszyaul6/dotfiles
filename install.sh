@@ -18,4 +18,4 @@ mkdir -p ~/.config
 ln -s ~/Developer/dotfiles/nvim ~/.config/nvim
 
 # script ends
-echo "dotfiles installtion script completed"
+echo "dotfiles installation script completed"
