@@ -52,6 +52,20 @@ return packer.startup(function(use)
     -- statusline
     use("nvim-lualine/lualine.nvim")
 
+    -- fuzzy finding
+    use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+    use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
+
+    -- autocompletion
+    use("hrsh7th/nvim-cmp")
+    use("hrsh7th/cmp-buffer")
+    use("hrsh7th/cmp-path")
+
+    -- snipperts
+    use("L3MON4D3/LuaSnip")
+    use("saadparwaiz1/cmp_luasnip")
+    use("rafamadriz/friendly-snippets")
+
     -- config packer.nvim automatically (recommended)
     if packer_bootstrap then
         require('packer').sync()
