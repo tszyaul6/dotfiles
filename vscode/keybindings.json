@@ -64,7 +64,7 @@
 		// close file explorer
 		"key": "space e",
 		"command": "workbench.action.toggleSidebarVisibility",
-		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+		"when": "!inputFocus"
 	},
 
 	// navigation between panes
