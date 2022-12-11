@@ -1,0 +1,83 @@
+[
+	// nerdtree-like keybinds
+	{
+		// open a file/folder
+		"key": "enter",
+		"command": "list.select",
+		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+	},
+	{
+		// open a file
+		"key": "t",
+		"command": "list.select",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+	},
+	{
+		// create a new file
+		"key": "a",
+		"command": "workbench.files.action.createFileFromExplorer",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		// delete a file
+		"key": "x",
+		"command": "moveFileToTrash",
+		"when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		// cut a file
+		"key": "d d",
+		"command": "filesExplorer.cut",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		// yank a file/folder
+		"key": "y",
+		"command": "filesExplorer.copy",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		// paste a file/folder
+		"key": "p",
+		"command": "filesExplorer.paste",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		// create folder
+		"key": "f",
+		"command": "workbench.files.action.createFolderFromExplorer",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		// rename a file/folder
+		"key": "r",
+		"command": "renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		// close file explorer
+		"key": "q",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+	},
+	{
+		// close file explorer
+		"key": "space e",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+	},
+
+	// navigation between panes
+	{
+		// navigate from explorer to editor
+		"key": "ctrl+w l",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "explorerViewletFocus && !inputFocus"
+	},
+	{
+		// navigate from terminal to editor
+		"key": "ctrl+w k",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	}
+]

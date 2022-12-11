@@ -1,0 +1,62 @@
+{
+	// icons and colorschems
+	"workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+	"workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+
+	// editor and terminal font
+	"editor.fontFamily": "JetBrains Mono",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 14,
+	"terminal.integrated.fontSize": 14,
+
+	// user interface
+	"editor.rulers": [80],
+	"editor.minimap.enabled": false,
+	"workbench.activityBar.visible": false,
+
+	// prettier extension
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+
+	// vim extension
+	"editor.lineNumbers": "relative",
+	"vim.leader": "<space>",
+	"vim.useCtrlKeys": true,
+	"vim.useSystemClipboard": true,
+	"vim.incsearch": true,
+	"vim.hlsearch": true,
+	"vim.easymotion": true,
+	"vim.insertModeKeyBindingsNonRecursive": [
+		{
+			// use jk to exit insert mode
+			"before": ["j", "k"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			// clear search highlight
+			"before": ["<leader>", "n", "h"],
+			"commands": [":noh"]
+		},
+		{
+			// delete character won't replace registry
+			"before": ["x"],
+			"after": ["\"", "_", "x"]
+		},
+		{
+			// open explorer
+			"before": ["<leader>", "e"],
+			"commands": ["workbench.view.explorer"]
+		}
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			// paste won't replace registry
+			"before": ["p"],
+			"after": ["p", "g", "v", "y"]
+		}
+	]
+}

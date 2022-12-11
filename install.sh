@@ -13,6 +13,10 @@ echo "Run 'git config --global core.excludesfile ~/.gitignore_global' to enable 
 # ideavim configs
 ln -s ~/Developer/dotfiles/idea/.ideavimrc ~/.ideavimrc
 
+# vscode configs
+ln -s ~/Developer/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/Developer/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+
 # neovim configs
 mkdir -p ~/.config
 ln -s ~/Developer/dotfiles/nvim ~/.config/nvim

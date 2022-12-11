@@ -12,6 +12,10 @@ rm ~/.gitignore_global
 # ideavim configs
 rm ~/.ideavimrc
 
+# vscode configs
+rm ~/Library/Application\ Support/Code/User/settings.json
+rm ~/Library/Application\ Support/Code/User/keybindings.json
+
 # neovim configs
 rm -rf ~/.config/nvim
 
