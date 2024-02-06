@@ -15,5 +15,9 @@ vim.wo.wrap = false
 
 vim.wo.relativenumber = true
 
+vim.opt.cursorline = true
+
+vim.opt.ignorecase = true
+
 vim.keymap.set("v", ">", ">gv", keymap_options)
 vim.keymap.set("v", "<", "<gv", keymap_options)
