@@ -11,6 +11,8 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
+vim.wo.wrap = false
+
 vim.wo.relativenumber = true
 
 vim.keymap.set("v", ">", ">gv", keymap_options)
