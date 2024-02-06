@@ -19,5 +19,7 @@ vim.opt.cursorline = true
 
 vim.opt.ignorecase = true
 
+vim.o.cmdheight = 0
+
 vim.keymap.set("v", ">", ">gv", keymap_options)
 vim.keymap.set("v", "<", "<gv", keymap_options)
