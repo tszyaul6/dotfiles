@@ -1,3 +1,5 @@
+DF="~/Developer/dotfiles"
 alias vi="nvim"
-alias nvim-conf="cd ~/Developer/dotfiles && vi init.lua && cd -"
-alias update-dotfiles="cp -r ~/Developer/dotfiles/nvim ~/AppData/Local/ && cp ~/Developer/dotfiles/.bashrc ~/"
+alias bashrc="cd $DF && vi .bashrc && cd -"
+alias nvim-conf="cd $DF/nvim && vi init.lua && cd -"
+alias update-dotfiles="cp -r $DF/nvim ~/AppData/Local/ && cp $DF/.bashrc ~/ && source ~/.bashrc"

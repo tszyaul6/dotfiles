@@ -1,16 +1,17 @@
--- custom keymaps
 local keymap_options = { noremap = true }
-vim.keymap.set("i", "jk", "<Esc>", keymap_options)
+
 vim.g.mapleader = " "
 
--- use system clipboard
-vim.api.nvim_set_option("clipboard","unnamed")
+vim.keymap.set("i", "jk", "<Esc>", keymap_options)
 
--- tabs related
+vim.api.nvim_set_option("clipboard", "unnamed")
+
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
--- line number
 vim.wo.relativenumber = true
+
+vim.keymap.set("v", ">", ">gv", keymap_options)
+vim.keymap.set("v", "<", "<gv", keymap_options)

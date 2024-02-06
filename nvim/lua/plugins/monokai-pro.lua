@@ -1,6 +1,6 @@
 return {
     "loctvl842/monokai-pro.nvim",
-    config = function ()
+    config = function()
         require("monokai-pro").setup({
             filter = "spectrum"
         })
