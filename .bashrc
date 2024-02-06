@@ -1,9 +1,7 @@
-DF="~/Developer/dotfiles"
-MASON_BIN="~/AppData/Local/nvim-data/mason/bin"
-
+MASON_BIN="$(cd ~/AppData/Local/nvim-data/mason/bin && pwd)"
 export PATH=$PATH:$MASON_BIN
 
 alias vi="nvim"
-alias bashrc="cd $DF && vi .bashrc && cd -"
-alias nvim-conf="cd $DF/nvim && vi init.lua && cd -"
-alias update-dotfiles="cp -r $DF/nvim ~/AppData/Local/ && cp $DF/.bashrc ~/ && source ~/.bashrc"
+
+alias df="cd ~/Developer/dotfiles && nvim && cd -"
+alias reload="cp ~/Developer/dotfiles/.bashrc ~/.bashrc && source ~/.bashrc && rm -rf ~/AppData/Local/nvim && cp -r ~/Developer/dotfiles/nvim ~/AppData/Local/" 
